@@ -1,15 +1,18 @@
 # iOS Malicious Bit Hunter
 
 ## Abstract
-iOS Malicious Bit Hunter is a malicious plug-in detection engine for iOS applications. It can analyze the head of the macho file of the injected dylib dynamic library based on runtime, and can perform behavior analysis through interface input characteristics to determine the behavior of the dynamic library feature. The program does not rely on the jailbreak environment and can be used on the AppStore.
+  iOS Malicious Bit Hunter is a malicious plug-in detection engine for iOS applications. It can analyze the head of the macho file of the injected dylib dynamic library based on runtime, and can perform behavior analysis through interface input characteristics to determine the behavior of the dynamic library feature. The program does not rely on the jailbreak environment and can be used on the AppStore.
 
 ## What’s new feature 
   A new way to accurately identify the behavior of iOS malicious code will be introduced. This is a method of analyzing malicious code running in memory based on the Mach-O format within the App, which can execute flexible behavior recognize for analysis and continuous tracking. This is a very accurate anti-plug-in defense method, including behaviors, variants, and codes with strong obfuscate  (including ollvm), which has achieved very good results in our defense process.
 
 ## Logic Priciple 
+  The tool provides an API interface for obtaining externally match rules. It will analyze the behavior of jailbroken and repackaged dynamic libraries at runtime, mainly through static analysis of the MachO file format, through the Load Command and different segments Obtain the import table, export table, class name, function name, string and other information, and judge whether the dynamic library has been loaded into the memory through the memory map at runtime.
+  
 ![Logic Priciple](https://github.com/SecurityLife/iOS_Malicious_Bit_Hunter/blob/main/logic%20priciple.jpg)
 
-## detect demo result
+## Detect demo result
+  We used our SDK to analyze tens of thousands of jailbreak dynamic libraries. These resources come from some public jailbreak plugins. Below are our current test results：
 
 filename,rule
 
