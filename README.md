@@ -11,6 +11,9 @@
   
 ![Logic Priciple](https://github.com/SecurityLife/iOS_Malicious_Bit_Hunter/blob/main/logic%20priciple.jpg)
 
+## Source code
+  Currently authorized to open source under the name of Alipay, you can visit https://github.com/alipay/ios-malicious-bithunter
+
 ## Detect demo result
   We used our SDK to analyze tens of thousands of jailbreak dynamic libraries. These resources come from some public jailbreak plugins. Below are our current test results：
 
